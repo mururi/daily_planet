@@ -17,6 +17,8 @@ def index():
     # Getting entertainment sources
     entertainment_sources = get_sources('entertainment')
 
-    
+    # Getting general sources
+    general_sources = get_sources('general')
 
-    return render_template('index.html', title = title, business = business_sources, entertainment = entertainment_sources)
+
+    return render_template('index.html', title = title, business = business_sources, entertainment = entertainment_sources, general = general_sources)
