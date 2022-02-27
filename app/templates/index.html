@@ -1,3 +1,5 @@
+{% import 'macros.html' as macro %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +16,6 @@
 <body>
   <!-- Business Sources Section -->
   <h2> Business </h2>
-  {% for business_source in business %}
-    <div>
-      <h5>{{ business_source.name }}</h5>
-      <p>{{ business_source.description }}</p>
-      <a href="">Visit {{ business_source.name }}</a>
-    </div>
-  {% endfor %}
+  {{ macro.displaySourcesList(business) }}
 </body>
 </html>
