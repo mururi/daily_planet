@@ -14,4 +14,9 @@ def index():
     # Getting business sources
     business_sources = get_sources('business')
 
-    return render_template('index.html', title = title, business = business_sources)
+    # Getting entertainment sources
+    entertainment_sources = get_sources('entertainment')
+
+    
+
+    return render_template('index.html', title = title, business = business_sources, entertainment = entertainment_sources)
