@@ -9,3 +9,18 @@
   {% endfor %}
 
 {% endmacro %}
+
+
+{% macro displayArticlesList(articles_list) %}
+
+{% for article in articles_list %}
+<div>
+  <div>
+    <img src="{{article.urlToImage}}" alt="{{article.title}}" class="img-responsive">
+  </div>
+  <p>{{ article.description }}</p>
+  <a href="{{article.url}}">Read More</a>
+</div>
+{% endfor %}
+
+{% endmacro %}

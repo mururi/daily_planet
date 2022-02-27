@@ -44,6 +44,5 @@ def articles(id):
 
     articles = get_articles(id)
     title = f'Daily Planet | {id}'
-    print(articles[1].title)
 
     return render_template('articles.html', articles = articles, title = title)
