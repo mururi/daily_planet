@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+
+{% for article in articles %}
+  <div>
+    <div>
+      <img src="{{article.urlToImage}}" alt="{{article.title}}" class="img-responsive">
+    </div>
+    <p>{{ article.description }}</p>
+    <a href="{{article.url}}">Read More</a>
+  </div>
+{% endfor %}
+
+{% endblock %}
