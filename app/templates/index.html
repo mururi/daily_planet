@@ -9,27 +9,28 @@
 
 <!-- Content block -->
 {% block content %}
+  <div class="container-xl py-3">
+    <!-- Business Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> Business News </h2>
+    {{ macro.displaySourcesList(business) }}
+    <!-- Entertainment Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> Entertainment News </h2>
+    {{ macro.displaySourcesList(entertainment) }}
+    <!-- General Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> General News </h2>
+    {{ macro.displaySourcesList(general) }}
+    <!-- Health Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> Health News </h2>
+    {{ macro.displaySourcesList(health) }}
+    <!-- Science Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> Science News </h2>
+    {{ macro.displaySourcesList(science) }}
+    <!-- Sports Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> Sports News </h2>
+    {{ macro.displaySourcesList(sports) }}
+    <!-- Technology Sources Section -->
+    <h2 class="pt-4 pb-0 mb-0"> Technology News </h2>
+    {{ macro.displaySourcesList(technology) }}
+  </div>
 
-  <!-- Business Sources Section -->
-  <h2> Business News </h2>
-  {{ macro.displaySourcesList(business) }}
-  <!-- Entertainment Sources Section -->
-  <h2> Entertainment News </h2>
-  {{ macro.displaySourcesList(entertainment) }}
-  <!-- General Sources Section -->
-  <h2> General News </h2>
-  {{ macro.displaySourcesList(general) }}
-  <!-- Health Sources Section -->
-  <h2> Health News </h2>
-  {{ macro.displaySourcesList(health) }}
-  <!-- Science Sources Section -->
-  <h2> Science News </h2>
-  {{ macro.displaySourcesList(science) }}
-  <!-- Sports Sources Section -->
-  <h2> Sports News </h2>
-  {{ macro.displaySourcesList(sports) }}
-  <!-- Technology Sources Section -->
-  <h2> Technology News </h2>
-  {{ macro.displaySourcesList(technology) }}
-  
 {% endblock %}

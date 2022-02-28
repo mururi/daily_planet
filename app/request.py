@@ -1,6 +1,7 @@
 from app import app
 import urllib.request, json
 from .models import source, article
+from datetime import datetime
 
 Source = source.Source
 Article = article.Article
@@ -97,7 +98,11 @@ def process_articles_results(articles_list):
         description = article_item.get('description')
         url = article_item.get('url')
         urlToImage = article_item.get('urlToImage')
-        publishedAt = article_item.get('publishedAt')
+        rawDate = article_item.get('publishedAt')
+
+        date_object = datetime.strptime(rawDate, '%Y-%m-%dT%H:%M:%SZ')
+        publishedAt = date_object.strftime('%d.%m.%Y')
+        print(publishedAt)
 
         if urlToImage and description:
             article_object = Article(id, author, title, description, url, urlToImage, publishedAt)
