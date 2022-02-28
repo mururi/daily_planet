@@ -17,10 +17,14 @@
 </head>
 
 <body>
-  <!-- Navbar block -->
-  {% block navbar %}
-    {% include 'navbar.html' %}
-  {% endblock %}
+  <header>
+    <h1 class="text-center py-3">Daily Planet</h1>
+    <!-- Navbar block -->
+    {% block navbar %}
+      {% include 'navbar.html' %}
+    {% endblock %}
+  </header>
+  
   
   <!-- Content block -->
   {% block content %}
