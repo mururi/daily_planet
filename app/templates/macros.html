@@ -39,10 +39,10 @@
       </div>
       <div class="col-sm-7">
           <div class="card-body">
-              <h5 class="card-title">{{ article.title }}</h5>
+              <h5 class="card-title fw-bolder py-2 fs-3">{{ article.title }}</h5>
               <p class="card-text">{{ article.description }}</p>
-              <a href="{{article.url}}" target="_blank">Read More</a>
-              <p>{{article.publishedAt}}</p>
+              <a href="{{article.url}}" target="_blank" class="article-links">Read More</a>
+              <p class="pt-2">Pulbished on {{article.publishedAt}}</p>
           </div>
       </div>
   </div>

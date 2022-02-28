@@ -106,7 +106,6 @@ def process_articles_results(articles_list):
 
         date_object = datetime.strptime(rawDate, '%Y-%m-%dT%H:%M:%SZ')
         publishedAt = date_object.strftime('%d.%m.%Y')
-        print(publishedAt)
 
         if urlToImage and description:
             article_object = Article(id, author, title, description, url, urlToImage, publishedAt)

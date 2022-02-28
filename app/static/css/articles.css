@@ -29,3 +29,17 @@ a.nav-link {
   font-weight: 600;
   font-size: 18px;
 }
+
+.material-icons {
+  color:#d2302c;
+}
+
+.article-links {
+  text-decoration: none;
+  color: #212529;
+  transition: all 0.25s ease;
+}
+
+.article-links:hover {
+  color: #d2302c;
+}
