@@ -60,6 +60,14 @@ To run this app locally, you need a PC with the following installed:
     ```bash
       pip install -r requirements.txt
     ```
+5. Open the terminal and navigate to the project directory and run the following commands to launch the program.
+
+    ```bash
+    chmod +x manage.py
+    ```
+    ```bash
+    ./start.sh
+    ```
 
 ## Technologies Used
 * Flask
