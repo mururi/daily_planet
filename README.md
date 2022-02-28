@@ -5,7 +5,7 @@
 ## Description 
 This is a flask web app that makes use of the NewsAPI to display news articles from different sources.
 
-![Daily Planet Web App](app/static)
+![Daily Planet Web App](app/static/daily_planet.png)
 
 ## How to Use
 ### Requirements
@@ -16,7 +16,7 @@ This is a flask web app that makes use of the NewsAPI to display news articles f
 Ensure that your device of choice has a browser installed.
 Click the link provided below to view the site.
 
-https://mururi.github.io/
+https://daily-planet-news.herokuapp.com/
 
 ### Using the App
 The user can navigate the web app easily and be able to:
